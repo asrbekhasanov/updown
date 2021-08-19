@@ -1,0 +1,154 @@
+.about {
+   padding-bottom: 150px;
+}
+
+.about .container {
+   display: flex;
+   align-items: center;
+}
+
+.about_img {
+   width: 100%;
+   max-width: 540px;
+}
+
+.about__info {
+   width: 100%;
+   max-width: 350px;
+   margin-left: 125px;
+
+   &::before {
+      width: 100%;
+      max-width: 350px;
+      height: 1px;
+      margin-bottom: 60px;
+      display: block;
+      background: #33323D;
+      opacity: 0.15;
+      content: '';
+   }
+
+   &::after {
+      width: 100%;
+      max-width: 350px;
+      height: 1px;
+      margin-top: 60px;
+      display: block;
+      background: #33323D;
+      opacity: 0.15;
+      content: '';
+   }
+}
+
+.about__heading {
+   margin-top: 0;
+   margin-bottom: 28px;
+   font-weight: bold;
+   font-size: 40px;
+   line-height: 42px;
+   letter-spacing: -0.357143px;
+   color: #33323D;
+}
+
+.about__text {
+   margin-top: 0;
+   margin-bottom: 24px;
+   font-size: 16px;
+   line-height: 30px;
+   color: #33323D;
+   opacity: 0.8;
+}
+
+.about_btn {
+   padding: 17px 36px 17px 32px;
+   font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   
+   color: #33323D;
+   border: 1px solid #79787a;
+}
+
+
+@include media-max(768px) {
+   .about__img-t {
+      max-width: 281px;
+   }
+
+   .about__info {
+      margin-left: 69px;
+   }
+}
+
+@include media-max(620px) {
+   .about__img-t {
+      max-width: 281px;
+   }
+   
+   .about__info {
+      max-width: 339px;
+      margin-left: 30px;
+   }
+
+   .about__heading {
+      font-size: 32px;
+   }
+
+   .about__text {
+      font-size: 15px;
+   }
+}
+
+
+@include media-max(620px) {
+   .about__img-t {
+      max-width: 281px;
+   }
+   
+   .about__info {
+      max-width: 339px;
+      margin-left: 30px;
+   }
+
+   .about__heading {
+      font-size: 32px;
+   }
+
+   .about__text {
+      font-size: 15px;
+   }
+}
+
+@include media-max(520px) {
+   .about {
+      padding-top: 150px;
+   }
+   .about .container {
+      flex-direction: column;
+   }
+
+   .about__img-t {
+      max-width: 281px;
+   }
+   
+   .about__info {
+      max-width: 339px;
+      margin-left: 0;
+   }
+
+   .about__heading {
+      font-size: 32px;
+   }
+
+   .about__text {
+      font-size: 15px;
+   }
+}
+
+@include media-max(425px) {
+   .about__img--m {
+      width: 311px;
+      height: 346px;
+   }
+}

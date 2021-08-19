@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.min.css">
+   <title>UpDown</title>
+</head>
+
+<body>
+   <!-- ========= heade ============ -->
+   <header class="header">
+      <div class="container">
+
+         <a class="header__logo" href="./index.html">
+            <img class="header__img" src="./imges/header__logo.svg" alt="UpDown" width="60" height="32">
+         </a>
+
+         <button class="humburger">
+
+            <img class="humburger__open" src="./imges/icon-hamburger.svg" alt="open" width="16" height="15">
+
+            <img class="humburger__close" src="./imges/close.svg" alt="close" width="16" height="15">
+
+         </button>
+
+         <nav class="nav nav__right">
+
+            <ul class="nav__list">
+
+               <li class="nav__item">
+                  <a class="nav__link nav__link--active" href="./index.html">HOME</a>
+               </li>
+
+               <li class="nav__item">
+                  <a class="nav__link" href="./portfolio" target="_block">PORTFOLIO</a>
+               </li>
+
+               <li class="nav__item nav__item--b">
+                  <a class="nav__link" href="./contact" target="_block">CONTACT ME</a>
+               </li>
+
+            </ul>
+
+         </nav>
+
+      </div>
+
+   </header>
+
+   <!-- ========= main ============= -->
+   <main class="main">
+      <section class="hero">
+         <div class="container container__inner">
+
+            <div class="hero__info">
+
+               <h1 class="hero__heading">
+                  Hey, I’m Alex Spencer and I love building beautiful websites
+               </h1>
+
+               <a class="hero__link section-link" href="#">
+                  <span class="hero__scrol">
+                     <img src="./imges/scrol.svg" alt="scrol" width="16" height="12">
+                  </span>
+                  ABOUT ME
+               </a>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="about">
+
+         <div class="container">
+            <picture class="about__picture">
+
+               <source class="about__img--m" type="image/webp" media="(max-width: 425px)" srcset="
+               ./imges/section__mobile.webp    1x,
+               ./imges/section__mobile@2x.webp 2x
+               " />
+
+               <source class="about__img-t" type="image/webp" media="(max-width: 769px)" srcset="
+               ./imges/section__table.webp    1x,
+               ./imges/section__table@2x.webp 2x
+               " />
+
+               <source type="image/webp" srcset="./imges/section__img.webp 1x, ./imges/section__img@2x.webp 2x" />
+
+               <img class="about_img" src="./imges/section__img.webp"
+                  srcset="./imges/section__img.webp 1x, ./imges/section__img@2x.webp 2x" alt="me" width="540"
+                  height="600" />
+            </picture>
+            <div class="about__info">
+               <h2 class="about__heading">
+                  About Me
+               </h2>
+
+               <p class="about__text">
+                  I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
+                  accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript
+                  code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but
+                  I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me
+                  outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to
+                  check out my work.
+               </p>
+
+               <a class="about_btn" href="#" target="_blanck">GO TO PORTFOLIO</a>
+            </div>
+
+         </div>
+
+      </section>
+
+      <section class="interested">
+         <div class="container">
+            <h2 class="interested__heading">
+               Interested in doing a project together?
+            </h2>
+
+            <span class="line"></span>
+
+            <a class="interested__btn" href="#" target="_blanck" >CONTACT ME</a>
+         </div>
+
+      </section>
+   </main>
+
+   <!-- ========= footer =========== -->
+   <footer class="footer">
+      <div class="container footer__container">
+
+         <a class="header__logo" href="./index.html">
+            <img class="header__img" src="./imges/footer__logo.svg" alt="UpDown" width="60" height="32">
+         </a>
+
+         <nav class="nav nav__right">
+
+            <ul class="nav__list">
+
+               <li class="nav__item">
+                  <a class="nav__link" href="./index.html">HOME</a>
+               </li>
+
+               <li class="nav__item">
+                  <a class="nav__link" href="./portfolio" target="_block">PORTFOLIO</a>
+               </li>
+
+               <li class="nav__item nav__item--b">
+                  <a class="nav__link" href="./contact" target="_block">CONTACT ME</a>
+               </li>
+
+            </ul>
+
+         </nav>
+
+         <div class="footer__link">
+
+            <a href="" class="link__icon">
+               <img class="icon__img" src="./imges/github.svg" alt="github icon" width="25" height="24">
+            </a>
+
+            <a href="" class="link__icon">
+               <img class="icon__img" src="./imges/twitter.svg" alt="twitter icon" width="25" height="24">
+            </a>
+
+            <a href="" class="link__icon">
+               <img class="icon__img" src="./imges/In.svg" alt="instagram icon" width="24" height="25">
+            </a>
+
+         </div>
+
+      </div>
+   </footer>
+
+   <script src="./js/main.js"></script>
+</body>
+
+</html>

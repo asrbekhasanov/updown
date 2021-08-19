@@ -1,0 +1,88 @@
+.interested {
+   padding-bottom: 150px;
+}
+
+.interested .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.interested__heading {
+   width: 100%;
+   max-width: 350px;
+   margin: 0;
+   font-weight: bold;
+   font-size: 40px;
+   line-height: 42px;
+   letter-spacing: -0.357143px;
+   color: #33323D;
+}
+
+.line {
+   width: 100%;
+   max-width: 534px;
+   height: 1px;
+   display: block;
+   background: #33323D;
+   opacity: 0.15;
+}
+
+.interested__btn {
+   padding: 17px 35px 17px 32px;
+   font-size: 12px;
+   line-height: 14px;
+   letter-spacing: 2px;
+   text-transform: uppercase;   
+   color: #33323D;
+   border: 1px solid #6e6e6e;
+}
+
+
+@include media-max(1110px) {
+   .line {
+      max-width: 334px;
+   }
+}
+
+@include media-max(900px) {
+   .line {
+      max-width: 234px;
+   }
+}
+
+@include media-max(800px) {
+   .line {
+      max-width: 114px;
+   }
+}
+
+@include media-max(720px) {
+   .line {
+      max-width: 114px;
+   }
+}
+
+@include media-max(680px) {
+   .line {
+      max-width: 50px;
+   }
+}
+
+@include media-max(680px) {
+   .line {
+      display: none;
+   }
+}
+
+@include media-max(570px) {
+   .interested .container {
+      flex-direction: column;
+   }
+
+   .interested__heading {
+      margin-bottom: 40px;
+      text-align: center;
+   }
+}
